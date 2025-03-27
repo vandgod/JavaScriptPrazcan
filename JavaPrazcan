@@ -1,0 +1,46 @@
+JavaScriptPrazcan
+
+public class Produto {
+    private int refProduto;
+    private String nomeProduto;
+    private double valorCompra;
+    private double valorVenda;
+
+    // Getters e Setters
+    public int getRefProduto() {
+        return refProduto;
+    }
+
+    public void setRefProduto(int refProduto) {
+        this.refProduto = refProduto;
+    }
+
+    public String getNomeProduto() {
+        return nomeProduto;
+    }
+
+    public void setNomeProduto(String nomeProduto) {
+        this.nomeProduto = nomeProduto;
+    }
+
+    public double getValorCompra() {
+        return valorCompra;
+    }
+
+    public void setValorCompra(double valorCompra) {
+        this.valorCompra = valorCompra;
+    }
+
+    public double getValorVenda() {
+        return valorVenda;
+    }
+
+    public void setValorVenda(double valorVenda) {
+        this.valorVenda = valorVenda;
+    }
+
+    @Override
+    public String toString() {
+        return "Produto{refProduto=" + refProduto + ", nomeProduto='" + nomeProduto + "', valorCompra=" + valorCompra + ", valorVenda=" + valorVenda + "}";
+    }
+}
