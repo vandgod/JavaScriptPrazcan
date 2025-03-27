@@ -1,0 +1,105 @@
+@startuml
+class Cliente {
+    - long cnpjCliente
+    - String nomeCliente
+    - long idCliente
+    - String rua
+    - int numero
+    - String bairro
+    - String cidade
+    - String estado
+
+    + long getCnpjCliente()
+    + void setCnpjCliente(long cnpjCliente)
+    + String getNomeCliente()
+    + void setNomeCliente(String nomeCliente)
+    + long getIdCliente()
+    + void setIdCliente(long idCliente)
+    + String getRua()
+    + void setRua(String rua)
+    + int getNumero()
+    + void setNumero(int numero)
+    + String getBairro()
+    + void setBairro(String bairro)
+    + String getCidade()
+    + void setCidade(String cidade)
+    + String getEstado()
+    + void setEstado(String estado)
+}
+
+class Vendedor {
+    - int codVendedor
+    - String nomeVendedor
+    - int senhaVendedor
+
+    + int getCodVendedor()
+    + void setCodVendedor(int codVendedor)
+    + String getNomeVendedor()
+    + void setNomeVendedor(String nomeVendedor)
+    + int getSenhaVendedor()
+    + void setSenhaVendedor(int senhaVendedor)
+}
+
+class Produto {
+    - int idProduto
+    - String nomeProduto
+    - int refProduto
+    - double valorProduto
+
+    + int getIdProduto()
+    + void setIdProduto(int idProduto)
+    + String getNomeProduto()
+    + void setNomeProduto(String nomeProduto)
+    + int getRefProduto()
+    + void setRefProduto(int refProduto)
+    + double getValorProduto()
+    + void setValorProduto(double valorProduto)
+}
+
+class Estoque {
+    - String dataEstoque
+    - String nomeProduto
+    - double valorProdutoCusto
+    - double valorProdutoVenda
+    - int qntProduto
+    - int refProduto
+
+    + String getDataEstoque()
+    + void setDataEstoque(String dataEstoque)
+    + String getNomeProduto()
+    + void setNomeProduto(String nomeProduto)
+    + double getValorProdutoCusto()
+    + void setValorProdutoCusto(double valorProdutoCusto)
+    + double getValorProdutoVenda()
+    + void setValorProdutoVenda(double valorProdutoVenda)
+    + int getQntProduto()
+    + void setQntProduto(int qntProduto)
+    + int getRefProduto()
+    + void setRefProduto(int refProduto)
+}
+
+class VendaAtual {
+    - int idVendaAtual
+    - int idCliente
+    - int cnpjCliente
+    - String nomeCliente
+    - int qntPrateleira
+    - int sugestaoVenda
+    - double valorPedido
+
+    + int getIdVendaAtual()
+    + void setIdVendaAtual(int idVendaAtual)
+    + int getIdCliente()
+    + void setIdCliente(int idCliente)
+    + int getCnpjCliente()
+    + void setCnpjCliente(int cnpjCliente)
+    + String getNomeCliente()
+    + void setNomeCliente(String nomeCliente)
+    + int getQntPrateleira()
+    + void setQntPrateleira(int qntPrateleira)
+    + int getSugestaoVenda()
+    + void setSugestaoVenda(int sugestaoVenda)
+    + double getValorPedido()
+    + void setValorPedido(double valorPedido)
+}
+@enduml
